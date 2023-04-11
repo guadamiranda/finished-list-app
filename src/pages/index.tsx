@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Head from 'next/head'
 import Navbar from '../pages/Navbar/Navbar'
 import GlobalStyle from '../styles/globals.module.scss'
+import Home from './Home/Home';
 
 export default function Home() {
   const kirby = 'https://i.pinimg.com/originals/b6/e9/55/b6e95526effec42d33edb446ab6d0b07.gif'
@@ -20,8 +21,7 @@ export default function Home() {
   const changeBackground:any = () => {
     const gifs = [kirby, pikaSurf, mario, invaders, zelda, pikachu2, yoshi, undertale];
     const background = document.getElementById('body');
-    background.style.backgroundImage = 'url(' + gifs[Math.floor(Math.random() * gifs.length)] + ')';
-    
+    background.style.backgroundImage = 'url(' + gifs[Math.floor(Math.random() * gifs.length)] + ')'; 
   }
 
   return (
@@ -36,6 +36,7 @@ export default function Home() {
       <div className={GlobalStyle.body} id='body'>
         <Navbar/>
         <div className={GlobalStyle.home}>
+          <Home/>
         </div>
       </div>
     </>
