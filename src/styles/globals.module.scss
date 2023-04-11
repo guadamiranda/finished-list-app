@@ -1,0 +1,20 @@
+
+.body{
+  width: 100vw;
+  margin: 0px;
+  display: flex;
+  overflow-x: none;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home{
+  background: rgb(22,22,22);
+  background: linear-gradient(180deg, rgba(39, 39, 39, 0.723) 16%, rgba(97,97,97,0.6811099439775911) 100%);
+  width: 100vw;
+}
