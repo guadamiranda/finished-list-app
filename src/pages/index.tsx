@@ -11,13 +11,14 @@ export default function Home() {
   const zelda = 'https://media.tenor.com/JXdxjNigjL8AAAAC/nes-zelda.gif'
   const pikachu2 = 'https://i.pinimg.com/originals/ec/81/db/ec81db6415906488ff268b3a0855ba17.gif'
   const yoshi = 'https://media.tenor.com/O1S0Gq6i5EMAAAAd/yoshi-island.gif'
+  const undertale= 'https://thumbs.gfycat.com/AdvancedFeminineDartfrog-size_restricted.gif'
 
   useEffect(() => {
     changeBackground()
   })
 
   const changeBackground:any = () => {
-    const gifs = [kirby, pikaSurf, mario, invaders, zelda, pikachu2, yoshi];
+    const gifs = [kirby, pikaSurf, mario, invaders, zelda, pikachu2, yoshi, undertale];
     const background = document.getElementById('body');
     background.style.backgroundImage = 'url(' + gifs[Math.floor(Math.random() * gifs.length)] + ')';
     
