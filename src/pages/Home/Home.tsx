@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Link from 'next/link';
 import homeStyle from './home.module.scss';
 import Title from '../../Components/Title/Title';
 import Card from '../../Components/Card/Card';
@@ -28,11 +29,11 @@ export default function Home() {
             </div>
 
             <div className={homeStyle.home__options}>
-                <div className={homeStyle.cardWrapper}><Card title='Finished' number=''/></div>
+                <div className={homeStyle.cardWrapper}><Link href='/finished'><Card title='Finished' number=''/></Link></div>
                 <br></br>
-                <div className={homeStyle.cardWrapper}><Card title='Playing' number=''/></div>
+                <div className={homeStyle.cardWrapper}><Link href='/playing'><Card title='Playing' number=''/></Link></div>
                 <br></br>
-                <div className={homeStyle.cardWrapper}><Card title='To Play' number=''/></div>
+                <div className={homeStyle.cardWrapper}><Link href='/toplay'><Card title='To Play' number=''/></Link></div>
             </div>
             
         </div>
