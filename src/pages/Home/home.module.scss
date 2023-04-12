@@ -7,13 +7,33 @@
         display: flex;
         justify-content: center;
     }
+
+    &__options{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-@media (max-width: 450px){
+@media (max-width: 668px){
     .home{
-
         &__title{
             text-align: center;
         }
+
+        &__options{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+        }
     } 
 }
+
+.cardWrapper{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+  }

@@ -9,7 +9,7 @@
     white-space: nowrap;
     letter-spacing: .15em;
     animation: 
-        typing 3.5s steps(40, end),
+        typing 3.3s steps(50, end),
 }
 
 @keyframes typing {
@@ -17,7 +17,7 @@
     to { width: 100% }
   }
 
-@media (max-width: 450px){
+@media (max-width: 668px){
     .title {
         font-size: 15px;
     } 
