@@ -1,9 +1,13 @@
 import titleStyle from './title.module.scss'
 
-export default function Title() {
+interface title {
+    name: string;
+}
+
+export default function Title(props:title) {
     return(
         <div className={titleStyle.title}>
-            Welcome to your list
+            {props.name}
         </div>
     )
 }

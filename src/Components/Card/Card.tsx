@@ -1,4 +1,4 @@
-import cardStyle from './card.module.scss'
+import cardStyle from '../../styles/card.module.scss'
 import { MdArrowForwardIos } from 'react-icons/md'
 
 interface cardInformation {
