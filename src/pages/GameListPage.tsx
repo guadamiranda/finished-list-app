@@ -21,7 +21,11 @@ export default function GameListPage() {
                 </div>
                 <br/>
                 <div className={gameListStyle.body__list}>
-                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7}/>
+                    <Item name='The Binding of Isaac ' duration={6} console='nes' icon='icon' qualification={7} />
+                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7} />
+                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7} />
+                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7} />
+                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7} />
                 </div>
             </div>
         </div>
