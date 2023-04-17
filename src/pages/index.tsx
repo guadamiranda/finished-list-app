@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Head from 'next/head'
-import Navbar from '../Components/Navbar/Navbar';
 import HomeView from './Home';
 import GlobalStyle from '../styles/globals.module.scss'
 
