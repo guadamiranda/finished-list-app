@@ -1,0 +1,21 @@
+
+.item{
+    height: 8vh;
+    width: 95%;
+    border-bottom: 1px solid white;
+    align-items: center;
+    display: flex;
+
+    &__img {
+        background-color: white;
+        border-radius: 8px;
+        height: 40px;
+        width: 40px;
+        margin-right: 5px;
+    }
+
+    &__information{
+        display: flex;
+        flex-direction: column;
+    }
+}

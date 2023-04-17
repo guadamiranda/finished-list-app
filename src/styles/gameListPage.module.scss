@@ -23,7 +23,7 @@
 
     &__list{
         width: 65vw;
-        height: 80vh;
+        height: 75vh;
     }
 }
 
@@ -37,6 +37,7 @@
             background-color: rgba(32, 32, 32, 0.267);
             width: 90vw;
             border-radius: 8px;
+            display: flex;
         } 
     
         &__list{
