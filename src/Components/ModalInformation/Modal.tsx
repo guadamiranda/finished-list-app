@@ -10,7 +10,7 @@ interface modal {
 }
 
 export default function Modal(props:modal) {
-    const [isVisible, setIsVisible] = useState(true) 
+    const [isVisible, setIsVisible] = useState(false) 
 
     const closeModal = () => {
         setIsVisible(false)
