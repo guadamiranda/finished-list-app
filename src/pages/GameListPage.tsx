@@ -3,6 +3,7 @@ import gameListStyle from '../styles/gameListPage.module.scss';
 import Title from '@/Components/Title/Title';
 import Options from '../Components/Options/Options'
 import Item from '../Components/Item/Item';
+import ModalInformation from '../Components/ModalInformation/Modal';
 import { useRouter } from 'next/router'
 
 export default function GameListPage() {
@@ -11,6 +12,7 @@ export default function GameListPage() {
 
     return(
         <div className={gameListStyle.list}>
+            <ModalInformation title='Tales of Monkey Island Complete Pack: Chapter 4 - The Trial and Execution of Guybrush Threepwood.' duration={9} console='NES' img='img'/>
             <div className={gameListStyle.list__title}>
                 <Title name={ name }/>
             </div>  

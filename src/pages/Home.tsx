@@ -32,8 +32,7 @@ export default function Home() {
                 <div className={homeStyle.cardWrapper}><Link className={homeStyle.cardWrapper__cardLink} href='/GameListPage?name=Playing'><Card title='Playing' number=''/></Link></div>
                 <br></br>
                 <div className={homeStyle.cardWrapper}><Link className={homeStyle.cardWrapper__cardLink} href='/GameListPage?name=ToPlay'><Card title='To Play' number=''/></Link></div>
-            </div>
-            
+            </div>   
         </div>
     )
 }

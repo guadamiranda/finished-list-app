@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: space-evenly;
     overflow-y: auto;
+    position: relative;
 
     &__list{
         background-color: rgba(32, 32, 32, 0.267);
