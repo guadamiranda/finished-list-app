@@ -1,6 +1,9 @@
 
 .list {
+    background: rgb(22,22,22);
+    background: linear-gradient(180deg, rgba(39, 39, 39, 0.723) 16%, rgba(97,97,97,0.6811099439775911) 100%);
     width: 100vw;
+    min-height: 100vh;
 
     &__title{
         display: flex;

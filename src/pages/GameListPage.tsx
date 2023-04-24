@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import gameListStyle from '../styles/gameListPage.module.scss';
 import Title from '@/Components/Title/Title';
 import Options from '../Components/Options/Options'
@@ -9,10 +9,11 @@ import { useRouter } from 'next/router'
 export default function GameListPage() {
     const router = useRouter()
     const {name} = router.query 
+    const [isOpen, setIsOpen] = useState(false)
 
     return(
         <div className={gameListStyle.list}>
-            <ModalInformation title='Tales of Monkey Island Complete Pack: Chapter 4 - The Trial and Execution of Guybrush Threepwood.' duration={9} console='NES' img='img'/>
+            {isOpen && <ModalInformation title='Tales of Monkey Island Complete Pack: Chapter 4 - The Trial and Execution of Guybrush Threepwood.' duration={9} console='NES' img='img' isOpen={isOpen} setIsOpen={setIsOpen}/>}
             <div className={gameListStyle.list__title}>
                 <Title name={ name }/>
             </div>  
@@ -23,26 +24,11 @@ export default function GameListPage() {
                 </div>
                 <br/>
                 <div className={gameListStyle.body__list}>
-                    <Item name='The Binding of Isaac ' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='The Legend of Zelda' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='Mario Bros. 3' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='STALKER' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='The Binding of Isaac ' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='The Legend of Zelda' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='Mario Bros. 3' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='STALKER' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='game' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='The Binding of Isaac ' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='The Legend of Zelda' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='Mario Bros. 3' duration={6} console='nes' icon='icon' qualification={7} />
-                    <Item name='STALKER' duration={6} console='nes' icon='icon' qualification={7} />
+                    <div onClick={() => setIsOpen(true)}><Item name='The Binding of Isaac ' duration={6} console='nes' icon='icon' qualification={7} /></div>
+                    <div onClick={() => setIsOpen(true)}><Item name='The Binding of Isaac ' duration={6} console='nes' icon='icon' qualification={7} /></div>
+                    <div onClick={() => setIsOpen(true)}><Item name='The Binding of Isaac ' duration={6} console='nes' icon='icon' qualification={7} /></div>
+                    <div onClick={() => setIsOpen(true)}><Item name='The Binding of Isaac ' duration={6} console='nes' icon='icon' qualification={7} /></div>
+                    
                 </div>
             </div>
         </div>

@@ -7,21 +7,17 @@ interface modal {
     duration: number;
     console: string;
     img: string;
+    isOpen: boolean;
+    setIsOpen: any;
 }
 
 export default function Modal(props:modal) {
-    const [isVisible, setIsVisible] = useState(false) 
-
-    const closeModal = () => {
-        setIsVisible(false)
-    }
-
     return(
         <>
-        { isVisible ? (
+        { props.isOpen ? (
                 <div className={modalStyle.modal} id='modal'>
                     <div className={modalStyle.modal__container}>
-                    <div onClick={() => closeModal()}className={modalStyle.modal__container__header}><IoClose/></div>
+                    <div onClick={() => props.setIsOpen(false)} className={modalStyle.modal__container__header}><IoClose/></div>
                         <div className={modalStyle.modal__container__body}>
                             <div className={modalStyle.modal__container__body__img}>
                                 
