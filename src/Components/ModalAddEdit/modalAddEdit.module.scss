@@ -19,11 +19,15 @@
             width: 100%;
             height: 3vh;
             display: flex;
-            justify-content: flex-end;
-            font-size: 35px;
+            justify-content: space-between;
+            font-size: 15px;
             align-items: center;
             margin-top: 7px;
             color: white;
+
+            span {
+                margin-left: 5px;
+            }
         }
 
         &__header:hover{
@@ -35,28 +39,18 @@
             height: 90%;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-
-            &__img{
-                width: 95%;
-                height: 50vh;
-                background-color: rgb(255, 255, 255);
-                margin-top: 10px;
-            }
-
-            &__title{
-                font-family: '8BIT WONDER', sans-serif;
-                margin-top: 4px;
-                color: white;
-                font-size: 12px;
-                text-align: center;
-            }
+            margin-left: 3px;
 
             &__info{
                 font-family: 'Montserrat', sans-serif;
                 font-size: 14px;
                 color: white;
+                margin-bottom: 10px;
+                margin-left: 10px;
+
+                input{
+                    width: 60%;
+                }
             }
         }
     }
@@ -90,8 +84,6 @@
                 height: 90%;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
 
                 &__img{
                     width: 95%;

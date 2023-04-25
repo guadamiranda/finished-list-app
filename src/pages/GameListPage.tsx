@@ -20,7 +20,7 @@ export default function GameListPage() {
             <br/>
             <div className={gameListStyle.body}>
                 <div className={gameListStyle.body__options}> 
-                    <Options/>
+                    <Options gameState={name}/>
                 </div>
                 <br/>
                 <div className={gameListStyle.body__list}>

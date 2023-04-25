@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import modalStyle from './modal.module.scss'
 import { IoClose } from 'react-icons/io5'
 

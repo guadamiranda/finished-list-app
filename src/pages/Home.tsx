@@ -5,6 +5,7 @@ import Title from '../Components/Title/Title';
 import Card from '../Components/Card/Card';
 
 export default function Home() {
+
     const cardWrapper = () => {
         var cards = document.querySelectorAll(`div`);
 
@@ -27,7 +28,7 @@ export default function Home() {
             </div>
 
             <div className={homeStyle.home__options}>
-                <div className={homeStyle.cardWrapper}><Link className={homeStyle.cardWrapper__cardLink} href='/GameListPage?name=Finished'><Card title='Finished' number=''/></Link></div>
+                <div className={homeStyle.cardWrapper}><Link className={homeStyle.cardWrapper__cardLink} href='/GameListPage?name=Finished'><Card title='Finished' number='' /></Link></div>
                 <br></br>
                 <div className={homeStyle.cardWrapper}><Link className={homeStyle.cardWrapper__cardLink} href='/GameListPage?name=Playing'><Card title='Playing' number=''/></Link></div>
                 <br></br>
