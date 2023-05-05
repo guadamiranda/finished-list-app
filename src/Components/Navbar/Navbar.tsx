@@ -9,7 +9,7 @@ export default function Navbar() {
             <Link href='/' className={navbarStyle.navbar__left}><div className={navbarStyle.navbar__hide}>My</div> <MdOutlineVideogameAsset className={navbarStyle.navbar__iconLogo}/> <div className={navbarStyle.navbar__hide}>List</div></Link>
             <div className={navbarStyle.navbar__center}>
             </div>
-            <div className={navbarStyle.navbar__right}><IoPersonCircleOutline className={navbarStyle.navbar__iconUser}/></div>
+            <div className={navbarStyle.navbar__right}><Link href='/Login'><IoPersonCircleOutline className={navbarStyle.navbar__iconUser}/></Link></div>
         </div>
     )
 }

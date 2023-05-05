@@ -18,7 +18,7 @@ export default function ModalAddEdit(props:modalInfo) {
         { props.isOpenModalAddEdit ? (
                 <div className={modalAddEditStyle.modal} id='modal'>
                     <div className={modalAddEditStyle.modal__container}>
-                    <div onClick={() => props.setIsOpenModalAddEdit(false)} className={modalAddEditStyle.modal__container__header}>{props.isFinished? <span>Add Game</span> : <span>Edit Game</span>}<IoClose/></div>
+                    <div className={modalAddEditStyle.modal__container__header}>{props.isFinished? <span>Add Game</span> : <span>Edit Game</span>}<span onClick={() => props.setIsOpenModalAddEdit(false)} className={modalAddEditStyle.modal__container__iconClose}><IoClose /></span></div>
                         <div className={modalAddEditStyle.modal__container__body}>
                             <br/>
 
@@ -27,12 +27,10 @@ export default function ModalAddEdit(props:modalInfo) {
                                 <input></input>
                             </div>
 
-                            {props.isFinished? 
                             <div className={modalAddEditStyle.modal__container__body__info}>
                                 <span><b>Time to finish:</b> </span>
                                 <input></input>
-                            </div> : null
-                            }       
+                            </div>  
                             
                             <div className={modalAddEditStyle.modal__container__body__info}>
                                 <span><b>Console:</b> </span>
@@ -45,7 +43,12 @@ export default function ModalAddEdit(props:modalInfo) {
                             </div>
 
                         </div>
+
+                        <div className={modalAddEditStyle.modal__container__buttonContainer}>
+                            <div className={modalAddEditStyle.modal__container__buttonContainer__button}>{props.isFinished? <span>Add</span> : <span>Edit</span>}</div>
+                        </div>
                     </div>
+                    
                 </div> 
             ) : null 
         }

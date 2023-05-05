@@ -1,0 +1,59 @@
+@import url("https://fonts.cdnfonts.com/css/8bit-wonder");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+.loginCardContainer{
+    background-color: rgba(0, 0, 0, 0.349);
+    min-height: 400px;
+    width: 60vw;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+
+    &__leftSide {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+
+        &__gif {
+            width: 150px;
+            height: 150px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTRjODcxYTIwMTVlNzM3NDczYmIzYTgxNzA0MGMwNzUzM2ExYWY1MiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/cn97EhwvCPlrIWo2Sj/giphy.gif');
+        }
+
+    }
+
+    &__rightSide {
+        width: 50vw;
+        height: 350px;
+        border-left: 2px solid rgba(121, 121, 121, 0.733);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__information{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            &__title{
+                font-family: '8BIT WONDER', sans-serif;
+                color: white;
+            }
+
+            &__spans{
+                font-family: 'Montserrat', sans-serif;
+                color: white;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 668px){
+    .loginCardContainer{
+        width: 350px;
+    } 
+}

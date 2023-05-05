@@ -12,8 +12,10 @@
     justify-content: center;
 
     &__container{
-        background-color: rgba(90, 90, 90, 0.616);
-        width: 40vw;
+        background-color: rgba(65, 65, 65, 0.733);
+        width: 50vw;
+        padding: 5px;
+        border-radius: 3px;
 
         &__header{
             width: 100%;
@@ -30,7 +32,12 @@
             }
         }
 
-        &__header:hover{
+        &__iconClose{
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+        &__iconClose:hover{
             color: rgb(238, 90, 90);
         }
 
@@ -49,35 +56,54 @@
                 margin-left: 10px;
 
                 input{
-                    width: 60%;
+                    width: 50%;
                 }
+            }
+        }
+
+        &__buttonContainer{
+            display: flex;
+            justify-content: flex-end;
+
+            &__button{
+                color: white;
+                background-color: rgba(204, 204, 204, 0.349);
+                min-width: 60px;
+                padding: 3px;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 3px;
+                font-size: 13px;
+            }
+
+            &__button:hover{
+                animation: 10s colorChange infinite;
             }
         }
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 668px){
     .modal{
+        display: flex;
         min-height: 100vh;
-        width: 100vw;
+        height: 150vh;
+        margin-top: 230px;
 
         &__container{
-            width: 90vw;
+            width: 70vw;
 
             &__header{
                 width: 100%;
-                height: 3vh;
+                height: 4vh;
                 display: flex;
-                justify-content: flex-end;
-                font-size: 35px;
+                justify-content: space-between;
+                font-size: 15px;
                 align-items: center;
                 margin-top: 7px;
                 color: white;
             }
 
-            &__header:hover{
-                color: rgb(238, 90, 90);
-            }
 
             &__body {
                 width: 100%;
@@ -108,4 +134,18 @@
             }
         }
     }
+}
+
+@keyframes colorChange {
+    0% {color: #e77878}
+    10% {color: #e7d378}
+    20% {color: #aee778}
+    30% {color: #78e7a6}
+    40% {color: #78e7d8}
+    50% {color: #78ace7}
+    60% {color: #8378e7}
+    70% {color: #e378e7}
+    80% {color: #e778b5}
+    90% {color: #e77887}
+    100% {color: rgb(231, 120, 120)}
 }
