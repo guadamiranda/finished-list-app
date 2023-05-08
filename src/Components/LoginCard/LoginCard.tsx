@@ -9,16 +9,17 @@ export default function LoginCard() {
             <div className={loginCardStyle.loginCardContainer__rightSide}>
                 <div className={loginCardStyle.loginCardContainer__rightSide__information}>
                     <span className={loginCardStyle.loginCardContainer__rightSide__information__title}>LOGIN</span>
-                    <br/>
-                    <br/>
                     <span className={loginCardStyle.loginCardContainer__rightSide__information__spans}>User Name:</span>
                     <input></input>
-                    <br/>
                     <span className={loginCardStyle.loginCardContainer__rightSide__information__spans}>Password:</span>
                     <input></input>
-                    <br/>
-                    <br/>
-                    <button>Enter</button>
+                    <div className={loginCardStyle.loginCardContainer__rightSide__information__button}>Enter</div>
+                </div>
+                <div className={loginCardStyle.loginCardContainer__rightSide__forgotPasswordOrNotUser}>
+                    <div className={loginCardStyle.loginCardContainer__rightSide__forgotPasswordOrNotUser__spans}>
+                        <span>Forget password?</span>
+                        <span>Don't have an account?</span>
+                    </div>
                 </div>
             </div>
         </div>

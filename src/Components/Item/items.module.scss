@@ -5,9 +5,42 @@
     height: 70px;
     align-items: center;
     display: flex;
-    margin: 0px 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.507);
     padding: 5px;
+    flex-direction: column;
+
+    &__upSide{
+        display: flex;
+        width: 100%;
+    }
+
+    &__downSide{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+
+        &__buttonDelete {
+            background-color: rgba(238, 75, 75, 0.623);
+            border: 1px solid rgba(187, 60, 60, 0.623);
+            border-radius: 5px;
+            color: rgb(226, 226, 226);
+            margin-right: 4px;
+            cursor: pointer;
+        }
+
+        &__buttonDelete:hover{
+            background-color: black;
+        }
+
+        &__buttonEdit {
+            background-color: rgba(75, 86, 238, 0.623);
+            border: 1px solid rgba(73, 60, 187, 0.623);
+            border-radius: 5px;
+            color: rgb(226, 226, 226);
+            padding-top: 1px;
+            cursor: pointer;
+        }
+    }
 
     &__img {
         background-color: white;
@@ -47,7 +80,6 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.507);
         align-items: center;
         display: flex;
-        margin: 0px 10px;
     
         &__img {
             background-color: white;

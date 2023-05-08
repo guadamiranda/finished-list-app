@@ -32,6 +32,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
 
         &__information{
             display: flex;
@@ -41,12 +42,61 @@
             &__title{
                 font-family: '8BIT WONDER', sans-serif;
                 color: white;
+                margin-bottom: 20px;
             }
 
             &__spans{
                 font-family: 'Montserrat', sans-serif;
                 color: white;
+                margin-top: 15px;
             }
+
+            &__button{
+                font-family: 'Montserrat', sans-serif;
+                background-color: rgba(121, 121, 121, 0.733);
+                color: white;
+                margin: 20px 0px;
+                padding: 5px 15px;
+                cursor: pointer;
+            }
+
+            &__button:hover {
+                animation: 10s colorChange infinite;
+            }
+
+            input{
+                background-color: rgba(121, 121, 121, 0.733);
+                border: none;
+                padding: 3px 6px;
+                color: rgb(221, 221, 221);
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            input:focus {
+                outline: none
+            }
+        }
+
+        &__forgotPasswordOrNotUser{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__spans {
+                font-family: 'Montserrat', sans-serif;
+                color: white;
+                font-size: 13px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 20px;
+                border-top: rgba(121, 121, 121, 0.733) 1px solid;
+
+                span {
+                    margin-top: 2px;
+                }
+            }
+
         }
 
     }
@@ -55,5 +105,43 @@
 @media (max-width: 668px){
     .loginCardContainer{
         width: 350px;
+        display: flex;
+        flex-direction: column;
+
+        &__leftSide {
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+            border-bottom: rgba(121, 121, 121, 0.733) 1px solid;
+            padding-bottom: 40px;
+    
+            &__gif {
+                width: 100px;
+                height: 100px;
+            }
+    
+        }
+
+        &__rightSide {
+            border-left: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
     } 
+}
+
+@keyframes colorChange {
+    0% {color: #e77878}
+    10% {color: #e7d378}
+    20% {color: #aee778}
+    30% {color: #78e7a6}
+    40% {color: #78e7d8}
+    50% {color: #78ace7}
+    60% {color: #8378e7}
+    70% {color: #e378e7}
+    80% {color: #e778b5}
+    90% {color: #e77887}
+    100% {color: rgb(231, 120, 120)}
 }
