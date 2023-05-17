@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import loginCardStyle from './loginCard.module.scss'
 
 export default function LoginCard() {
@@ -17,8 +18,7 @@ export default function LoginCard() {
                 </div>
                 <div className={loginCardStyle.loginCardContainer__rightSide__forgotPasswordOrNotUser}>
                     <div className={loginCardStyle.loginCardContainer__rightSide__forgotPasswordOrNotUser__spans}>
-                        <span>Forget password?</span>
-                        <span>Don't have an account?</span>
+                        <Link href='/Register' className={loginCardStyle.loginCardContainer__rightSide__forgotPasswordOrNotUser__noAccount}>Don't have an account?</Link>
                     </div>
                 </div>
             </div>

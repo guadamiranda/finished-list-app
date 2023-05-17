@@ -20,25 +20,37 @@
         justify-content: flex-end;
 
         &__buttonDelete {
-            background-color: rgba(238, 75, 75, 0.623);
-            border: 1px solid rgba(187, 60, 60, 0.623);
+            background-color: rgb(226, 226, 226);
+            border: 1px solid rgb(226, 226, 226);
             border-radius: 5px;
-            color: rgb(226, 226, 226);
+            color: rgba(238, 75, 75, 0.685);
             margin-right: 4px;
             cursor: pointer;
+            transition: 0.5s;
         }
 
         &__buttonDelete:hover{
-            background-color: black;
+            background-color: rgba(238, 75, 75, 0.623);
+            border: 1px solid rgba(187, 60, 60, 0.623);
+            color: rgb(226, 226, 226);
+            transition: 0.5s;
         }
 
         &__buttonEdit {
-            background-color: rgba(75, 86, 238, 0.623);
-            border: 1px solid rgba(73, 60, 187, 0.623);
+            background-color: rgb(226, 226, 226);
+            border: 1px solid rgb(226, 226, 226);
             border-radius: 5px;
-            color: rgb(226, 226, 226);
+            color: rgba(73, 60, 187, 0.747);
             padding-top: 1px;
             cursor: pointer;
+        }
+
+        &__buttonEdit:hover {
+            background-color: rgba(73, 60, 187, 0.623);
+            border: 1px solid rgba(73, 60, 187, 0.623);
+            color: rgb(226, 226, 226);
+            transition: 0.5s;
+
         }
     }
 

@@ -1,7 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/8bit-wonder");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
-.loginCardContainer{
+.registerCardContainer{
     background-color: rgba(0, 0, 0, 0.349);
     min-height: 400px;
     width: 60vw;
@@ -20,7 +20,11 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTRjODcxYTIwMTVlNzM3NDczYmIzYTgxNzA0MGMwNzUzM2ExYWY1MiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/cn97EhwvCPlrIWo2Sj/giphy.gif');
+            background-image: url('https://media2.giphy.com/media/1UwHF7R67LzHi/200w.webp?cid=ecf05e47nxavwj8mjjo1o25mkamyjkrcewtf0lx4wlvetqnn&ep=v1_stickers_search&rid=200w.webp&ct=s');
+        }
+
+        &__gif:hover {
+            cursor: pointer;
         }
 
     }
@@ -127,7 +131,7 @@
 }
 
 @media (max-width: 668px){
-    .loginCardContainer{
+    .registerCardContainer{
         width: 350px;
         display: flex;
         flex-direction: column;
@@ -137,7 +141,7 @@
             display: flex;
             justify-content: center;
             border-bottom: rgba(121, 121, 121, 0.733) 1px solid;
-            padding-bottom: 40px;
+            padding-bottom: 20px;
     
             &__gif {
                 width: 100px;
@@ -152,20 +156,8 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            height: 100px;
+            padding: 20px 0px;
         }
     } 
-}
-
-@keyframes colorChange {
-    0% {color: #e77878}
-    10% {color: #e7d378}
-    20% {color: #aee778}
-    30% {color: #78e7a6}
-    40% {color: #78e7d8}
-    50% {color: #78ace7}
-    60% {color: #8378e7}
-    70% {color: #e378e7}
-    80% {color: #e778b5}
-    90% {color: #e77887}
-    100% {color: rgb(231, 120, 120)}
 }
